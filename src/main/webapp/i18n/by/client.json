@@ -1,0 +1,31 @@
+{
+  "coopCycleApp": {
+    "client": {
+      "home": {
+        "title": "Clients",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Стварыць новы Client",
+        "createOrEditLabel": "Стварыць або адрэдагаваць Client",
+        "notFound": "No Clients found"
+      },
+      "created": "Новы Client створан з ідэнтыфікатарам {{ param }}",
+      "updated": "Client абноўлен з ідэнтыфікатарам {{ param }}",
+      "deleted": "Client выдален з ідэнтыфікатарам {{ param }}",
+      "delete": {
+        "question": "Вы ўпэўнены, што жадаеце выдаліць Client {{ id }}?"
+      },
+      "detail": {
+        "title": "Client"
+      },
+      "id": "ID",
+      "idClient": "Id Client",
+      "prenomClient": "Prenom Client",
+      "nomClient": "Nom Client",
+      "adresseClient": "Adresse Client",
+      "email": "Email",
+      "telCLient": "Tel C Lient",
+      "produit": "Produit",
+      "livraison": "Livraison"
+    }
+  }
+}

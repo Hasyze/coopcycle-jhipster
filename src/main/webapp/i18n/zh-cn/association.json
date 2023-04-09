@@ -1,0 +1,26 @@
+{
+  "coopCycleApp": {
+    "association": {
+      "home": {
+        "title": "Associations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "创建新 Association",
+        "createOrEditLabel": "创建或编辑 Association",
+        "notFound": "No Associations found"
+      },
+      "created": "Association {{ param }} 创建成功",
+      "updated": "Association {{ param }} 更新成功",
+      "deleted": "Association {{ param }} 删除成功",
+      "delete": {
+        "question": "你确定要删除 Association {{ id }} 吗？"
+      },
+      "detail": {
+        "title": "Association"
+      },
+      "id": "ID",
+      "idAsso": "Id Asso",
+      "nomAsso": "Nom Asso",
+      "livreur": "Livreur"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "coopCycleApp": {
+    "produit": {
+      "home": {
+        "title": "Produits",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Produit қўшиш",
+        "createOrEditLabel": "Produitни таҳрирлаш",
+        "notFound": "No Produits found"
+      },
+      "created": "Produit {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Produit сақланди.",
+      "deleted": "{{ param }}- Produit ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Produitни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Produit"
+      },
+      "id": "ID",
+      "idProd": "Id Prod",
+      "nomProd": "Nom Prod",
+      "prixProd": "Prix Prod",
+      "livraison": "Livraison",
+      "client": "Client",
+      "restaurant": "Restaurant"
+    }
+  }
+}

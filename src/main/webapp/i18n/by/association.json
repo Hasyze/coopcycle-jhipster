@@ -1,0 +1,26 @@
+{
+  "coopCycleApp": {
+    "association": {
+      "home": {
+        "title": "Associations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Стварыць новы Association",
+        "createOrEditLabel": "Стварыць або адрэдагаваць Association",
+        "notFound": "No Associations found"
+      },
+      "created": "Новы Association створан з ідэнтыфікатарам {{ param }}",
+      "updated": "Association абноўлен з ідэнтыфікатарам {{ param }}",
+      "deleted": "Association выдален з ідэнтыфікатарам {{ param }}",
+      "delete": {
+        "question": "Вы ўпэўнены, што жадаеце выдаліць Association {{ id }}?"
+      },
+      "detail": {
+        "title": "Association"
+      },
+      "id": "ID",
+      "idAsso": "Id Asso",
+      "nomAsso": "Nom Asso",
+      "livreur": "Livreur"
+    }
+  }
+}

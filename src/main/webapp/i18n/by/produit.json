@@ -1,0 +1,29 @@
+{
+  "coopCycleApp": {
+    "produit": {
+      "home": {
+        "title": "Produits",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Стварыць новы Produit",
+        "createOrEditLabel": "Стварыць або адрэдагаваць Produit",
+        "notFound": "No Produits found"
+      },
+      "created": "Новы Produit створан з ідэнтыфікатарам {{ param }}",
+      "updated": "Produit абноўлен з ідэнтыфікатарам {{ param }}",
+      "deleted": "Produit выдален з ідэнтыфікатарам {{ param }}",
+      "delete": {
+        "question": "Вы ўпэўнены, што жадаеце выдаліць Produit {{ id }}?"
+      },
+      "detail": {
+        "title": "Produit"
+      },
+      "id": "ID",
+      "idProd": "Id Prod",
+      "nomProd": "Nom Prod",
+      "prixProd": "Prix Prod",
+      "livraison": "Livraison",
+      "client": "Client",
+      "restaurant": "Restaurant"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "coopCycleApp": {
+    "association": {
+      "home": {
+        "title": "Associations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Association қўшиш",
+        "createOrEditLabel": "Associationни таҳрирлаш",
+        "notFound": "No Associations found"
+      },
+      "created": "Association {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Association сақланди.",
+      "deleted": "{{ param }}- Association ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Associationни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Association"
+      },
+      "id": "ID",
+      "idAsso": "Id Asso",
+      "nomAsso": "Nom Asso",
+      "livreur": "Livreur"
+    }
+  }
+}

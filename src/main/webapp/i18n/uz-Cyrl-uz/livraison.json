@@ -1,0 +1,30 @@
+{
+  "coopCycleApp": {
+    "livraison": {
+      "home": {
+        "title": "Livraisons",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Livraison қўшиш",
+        "createOrEditLabel": "Livraisonни таҳрирлаш",
+        "notFound": "No Livraisons found"
+      },
+      "created": "Livraison {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Livraison сақланди.",
+      "deleted": "{{ param }}- Livraison ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Livraisonни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Livraison"
+      },
+      "id": "ID",
+      "idLivraison": "Id Livraison",
+      "prixLivraison": "Prix Livraison",
+      "date": "Date",
+      "adresseLivraison": "Adresse Livraison",
+      "client": "Client",
+      "produit": "Produit",
+      "livreur": "Livreur"
+    }
+  }
+}

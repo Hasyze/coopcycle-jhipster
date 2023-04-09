@@ -1,0 +1,30 @@
+{
+  "coopCycleApp": {
+    "livraison": {
+      "home": {
+        "title": "Livraisons",
+        "refreshListLabel": "Värskenda nimekirja",
+        "createLabel": "Lisa uus Livraison",
+        "createOrEditLabel": "Lisa või muuda Livraison",
+        "notFound": "Ei leitud ühtegi Livraisons"
+      },
+      "created": "Uus Livraison on loodud identifikaatoriga {{ param }}",
+      "updated": "Livraison identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Livraison identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Livraison {{ id }}?"
+      },
+      "detail": {
+        "title": "Livraison"
+      },
+      "id": "ID",
+      "idLivraison": "Id Livraison",
+      "prixLivraison": "Prix Livraison",
+      "date": "Date",
+      "adresseLivraison": "Adresse Livraison",
+      "client": "Client",
+      "produit": "Produit",
+      "livreur": "Livreur"
+    }
+  }
+}

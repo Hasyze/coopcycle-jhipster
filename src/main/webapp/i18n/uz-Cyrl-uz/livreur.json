@@ -1,0 +1,29 @@
+{
+  "coopCycleApp": {
+    "livreur": {
+      "home": {
+        "title": "Livreurs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Livreur қўшиш",
+        "createOrEditLabel": "Livreurни таҳрирлаш",
+        "notFound": "No Livreurs found"
+      },
+      "created": "Livreur {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Livreur сақланди.",
+      "deleted": "{{ param }}- Livreur ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Livreurни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Livreur"
+      },
+      "id": "ID",
+      "idLivreur": "Id Livreur",
+      "nomLivreur": "Nom Livreur",
+      "prenomLivreur": "Prenom Livreur",
+      "telLivreur": "Tel Livreur",
+      "livraison": "Livraison",
+      "association": "Association"
+    }
+  }
+}

@@ -48,6 +48,17 @@ public class CacheConfiguration {
             createCache(cm, gl.coopcycle.domain.User.class.getName());
             createCache(cm, gl.coopcycle.domain.Authority.class.getName());
             createCache(cm, gl.coopcycle.domain.User.class.getName() + ".authorities");
+            createCache(cm, gl.coopcycle.domain.Client.class.getName());
+            createCache(cm, gl.coopcycle.domain.Client.class.getName() + ".produits");
+            createCache(cm, gl.coopcycle.domain.Client.class.getName() + ".livraisons");
+            createCache(cm, gl.coopcycle.domain.Livreur.class.getName());
+            createCache(cm, gl.coopcycle.domain.Livreur.class.getName() + ".livraisons");
+            createCache(cm, gl.coopcycle.domain.Livraison.class.getName());
+            createCache(cm, gl.coopcycle.domain.Restaurant.class.getName());
+            createCache(cm, gl.coopcycle.domain.Restaurant.class.getName() + ".produits");
+            createCache(cm, gl.coopcycle.domain.Produit.class.getName());
+            createCache(cm, gl.coopcycle.domain.Association.class.getName());
+            createCache(cm, gl.coopcycle.domain.Association.class.getName() + ".livreurs");
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,30 @@
+{
+  "coopCycleApp": {
+    "livraison": {
+      "home": {
+        "title": "Livraisons",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Стварыць новы Livraison",
+        "createOrEditLabel": "Стварыць або адрэдагаваць Livraison",
+        "notFound": "No Livraisons found"
+      },
+      "created": "Новы Livraison створан з ідэнтыфікатарам {{ param }}",
+      "updated": "Livraison абноўлен з ідэнтыфікатарам {{ param }}",
+      "deleted": "Livraison выдален з ідэнтыфікатарам {{ param }}",
+      "delete": {
+        "question": "Вы ўпэўнены, што жадаеце выдаліць Livraison {{ id }}?"
+      },
+      "detail": {
+        "title": "Livraison"
+      },
+      "id": "ID",
+      "idLivraison": "Id Livraison",
+      "prixLivraison": "Prix Livraison",
+      "date": "Date",
+      "adresseLivraison": "Adresse Livraison",
+      "client": "Client",
+      "produit": "Produit",
+      "livreur": "Livreur"
+    }
+  }
+}

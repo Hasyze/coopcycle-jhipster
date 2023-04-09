@@ -1,0 +1,30 @@
+{
+  "coopCycleApp": {
+    "livraison": {
+      "home": {
+        "title": "Livraisons",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Livraison",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Livraison",
+        "notFound": "No Livraisons found"
+      },
+      "created": "Một Livraison mới được tạo với định danh {{ param }}",
+      "updated": "Một Livraison cập nhật với định danh {{ param }}",
+      "deleted": "Một Livraison đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Livraison {{ id }}?"
+      },
+      "detail": {
+        "title": "Livraison"
+      },
+      "id": "ID",
+      "idLivraison": "Id Livraison",
+      "prixLivraison": "Prix Livraison",
+      "date": "Date",
+      "adresseLivraison": "Adresse Livraison",
+      "client": "Client",
+      "produit": "Produit",
+      "livreur": "Livreur"
+    }
+  }
+}

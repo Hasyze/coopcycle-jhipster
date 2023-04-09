@@ -1,0 +1,26 @@
+{
+  "coopCycleApp": {
+    "association": {
+      "home": {
+        "title": "Associations",
+        "refreshListLabel": "Värskenda nimekirja",
+        "createLabel": "Lisa uus Association",
+        "createOrEditLabel": "Lisa või muuda Association",
+        "notFound": "Ei leitud ühtegi Associations"
+      },
+      "created": "Uus Association on loodud identifikaatoriga {{ param }}",
+      "updated": "Association identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Association identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Association {{ id }}?"
+      },
+      "detail": {
+        "title": "Association"
+      },
+      "id": "ID",
+      "idAsso": "Id Asso",
+      "nomAsso": "Nom Asso",
+      "livreur": "Livreur"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "coopCycleApp": {
+    "produit": {
+      "home": {
+        "title": "Produits",
+        "refreshListLabel": "Värskenda nimekirja",
+        "createLabel": "Lisa uus Produit",
+        "createOrEditLabel": "Lisa või muuda Produit",
+        "notFound": "Ei leitud ühtegi Produits"
+      },
+      "created": "Uus Produit on loodud identifikaatoriga {{ param }}",
+      "updated": "Produit identifikaatoriga {{ param }} on muudetud",
+      "deleted": "Produit identifikaatoriga {{ param }} on kustutatud",
+      "delete": {
+        "question": "Kas olete kindel, et soovite kustutada Produit {{ id }}?"
+      },
+      "detail": {
+        "title": "Produit"
+      },
+      "id": "ID",
+      "idProd": "Id Prod",
+      "nomProd": "Nom Prod",
+      "prixProd": "Prix Prod",
+      "livraison": "Livraison",
+      "client": "Client",
+      "restaurant": "Restaurant"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "coopCycleApp": {
+    "association": {
+      "home": {
+        "title": "Associations",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Thêm mới một Association",
+        "createOrEditLabel": "Thêm mới hoặc cập nhật Association",
+        "notFound": "No Associations found"
+      },
+      "created": "Một Association mới được tạo với định danh {{ param }}",
+      "updated": "Một Association cập nhật với định danh {{ param }}",
+      "deleted": "Một Association đã xóa với định danh {{ param }}",
+      "delete": {
+        "question": "Bạn có chắc là muốn xóa Association {{ id }}?"
+      },
+      "detail": {
+        "title": "Association"
+      },
+      "id": "ID",
+      "idAsso": "Id Asso",
+      "nomAsso": "Nom Asso",
+      "livreur": "Livreur"
+    }
+  }
+}

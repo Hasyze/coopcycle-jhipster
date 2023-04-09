@@ -1,0 +1,27 @@
+{
+  "coopCycleApp": {
+    "restaurant": {
+      "home": {
+        "title": "Restaurants",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Янги Restaurant қўшиш",
+        "createOrEditLabel": "Restaurantни таҳрирлаш",
+        "notFound": "No Restaurants found"
+      },
+      "created": "Restaurant {{ param }} билан қўшилди.",
+      "updated": "{{ param }}- Restaurant сақланди.",
+      "deleted": "{{ param }}- Restaurant ўчирилди.",
+      "delete": {
+        "question": "{{ id }}- Restaurantни ўчирмоқчимисиз? "
+      },
+      "detail": {
+        "title": "Restaurant"
+      },
+      "id": "ID",
+      "idRest": "Id Rest",
+      "nomRest": "Nom Rest",
+      "adresseRest": "Adresse Rest",
+      "produit": "Produit"
+    }
+  }
+}
