@@ -23,7 +23,7 @@
     "enableTranslation": true,
     "entities": ["Client", "Livreur", "Livraison", "Restaurant", "Produit", "Association"],
     "entitySuffix": "",
-    "herokuAppName": "coopcycle-hasyze",
+    "herokuAppName": "coopcycleaziz",
     "herokuDeployType": "git",
     "herokuJavaVersion": "14",
     "jhiPrefix": "jhi",

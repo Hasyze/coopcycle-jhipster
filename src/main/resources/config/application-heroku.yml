@@ -12,7 +12,7 @@
 
 eureka:
   instance:
-    hostname: coopcycle-hasyze.herokuapp.com
+    hostname: coopcycleaziz.herokuapp.com
     non-secure-port: 80
     prefer-ip-address: false
 
