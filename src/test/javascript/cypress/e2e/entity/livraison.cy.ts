@@ -18,7 +18,7 @@ describe('Livraison e2e test', () => {
   const livraisonSample = {
     idLivraison: 36712,
     prixLivraison: 51290,
-    date: '2023-04-09T09:18:53.117Z',
+    date: '2023-04-10T20:07:26.117Z',
     adresseLivraison: 'iterate Cotton Agent',
   };
 
@@ -168,7 +168,7 @@ describe('Livraison e2e test', () => {
 
       cy.get(`[data-cy="prixLivraison"]`).type('66836').should('have.value', '66836');
 
-      cy.get(`[data-cy="date"]`).type('2023-04-09T17:56').blur().should('have.value', '2023-04-09T17:56');
+      cy.get(`[data-cy="date"]`).type('2023-04-11T04:45').blur().should('have.value', '2023-04-11T04:45');
 
       cy.get(`[data-cy="adresseLivraison"]`).type('Practical cross-media').should('have.value', 'Practical cross-media');
 

@@ -1,6 +1,6 @@
 {
   "applications": "*",
-  "changelogDate": "20230409230143",
+  "changelogDate": "20230411095016",
   "dto": "mapstruct",
   "embedded": false,
   "entityTableName": "livreur",
@@ -25,10 +25,8 @@
     {
       "fieldName": "telLivreur",
       "fieldType": "String",
-      "fieldValidateRules": ["required", "unique", "maxlength", "minlength", "pattern"],
-      "fieldValidateRulesMaxlength": "10",
-      "fieldValidateRulesMinlength": "10",
-      "fieldValidateRulesPattern": "[0-9]"
+      "fieldValidateRules": ["required", "unique", "pattern"],
+      "fieldValidateRulesPattern": "(\\+\\d+)?[0-9 ]+"
     }
   ],
   "fluentMethods": true,

@@ -4,14 +4,14 @@ entity Client {
     nomClient String required minlength(2) 
     adresseClient String required 
     email String required unique pattern(/[a-zA-Z0-9.]+@[a-zA-Z0-9.]+.[a-z]+/)
-    telCLient String required unique  maxlength(10) minlength(10) pattern(/[0-9]/)
+    telClient String required unique pattern(/(\+\d+)?[0-9 ]+/)
 }
 
 entity Livreur {
     idLivreur Integer required unique
     nomLivreur String required minlength(2) 
     prenomLivreur String required minlength(2) 
-    telLivreur String required unique  maxlength(10) minlength(10) pattern(/[0-9]/)
+    telLivreur String required unique pattern(/(\+\d+)?[0-9 ]+/)
 }
 
 entity Livraison {

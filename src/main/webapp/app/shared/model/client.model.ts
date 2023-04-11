@@ -8,7 +8,7 @@ export interface IClient {
   nomClient?: string;
   adresseClient?: string;
   email?: string;
-  telCLient?: string;
+  telClient?: string;
   produits?: IProduit[] | null;
   livraisons?: ILivraison[] | null;
 }

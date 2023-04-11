@@ -41,9 +41,8 @@ public class Livreur implements Serializable {
     private String prenomLivreur;
 
     @NotNull
-    @Size(min = 10, max = 10)
-    @Pattern(regexp = "[0-9]")
-    @Column(name = "tel_livreur", length = 10, nullable = false, unique = true)
+    @Pattern(regexp = "(\\+\\d+)?[0-9 ]+")
+    @Column(name = "tel_livreur", nullable = false, unique = true)
     private String telLivreur;
 
     @OneToMany(mappedBy = "livreur")

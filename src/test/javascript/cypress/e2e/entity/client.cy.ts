@@ -16,11 +16,12 @@ describe('Client e2e test', () => {
   const username = Cypress.env('E2E_USERNAME') ?? 'user';
   const password = Cypress.env('E2E_PASSWORD') ?? 'user';
   const clientSample = {
-    idClient: 9751,
-    prenomClient: 'Languedoc-Roussillon didactic b',
-    nomClient: 'pink Soft',
-    adresseClient: 'magenta parsing Verde',
-    email: 'ZST@bvWtzv',
+    idClient: 39143,
+    prenomClient: 'Saint-Denis pink Soft',
+    nomClient: 'magenta parsing Verde',
+    adresseClient: 'calculating 24/7',
+    email: 'wV9Y@vjeQ?jzpzaj',
+    telClient: '7 ',
   };
 
   let client;
@@ -174,6 +175,8 @@ describe('Client e2e test', () => {
       cy.get(`[data-cy="adresseClient"]`).type('Buckinghamshire').should('have.value', 'Buckinghamshire');
 
       cy.get(`[data-cy="email"]`).type('f@5yB99pxli').should('have.value', 'f@5yB99pxli');
+
+      cy.get(`[data-cy="telClient"]`).type('+86532').should('have.value', '+86532');
 
       cy.get(entityCreateSaveButtonSelector).click();
 

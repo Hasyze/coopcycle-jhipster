@@ -67,7 +67,7 @@ export const Client = () => {
                   <Translate contentKey="coopCycleApp.client.email">Email</Translate>
                 </th>
                 <th>
-                  <Translate contentKey="coopCycleApp.client.telCLient">Tel C Lient</Translate>
+                  <Translate contentKey="coopCycleApp.client.telClient">Tel Client</Translate>
                 </th>
                 <th />
               </tr>
@@ -85,7 +85,7 @@ export const Client = () => {
                   <td>{client.nomClient}</td>
                   <td>{client.adresseClient}</td>
                   <td>{client.email}</td>
-                  <td>{client.telCLient}</td>
+                  <td>{client.telClient}</td>
                   <td className="text-end">
                     <div className="btn-group flex-btn-group-container">
                       <Button tag={Link} to={`/client/${client.id}`} color="info" size="sm" data-cy="entityDetailsButton">

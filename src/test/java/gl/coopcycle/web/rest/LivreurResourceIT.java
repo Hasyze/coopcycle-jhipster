@@ -40,8 +40,8 @@ class LivreurResourceIT {
     private static final String DEFAULT_PRENOM_LIVREUR = "AAAAAAAAAA";
     private static final String UPDATED_PRENOM_LIVREUR = "BBBBBBBBBB";
 
-    private static final String DEFAULT_TEL_LIVREUR = "6";
-    private static final String UPDATED_TEL_LIVREUR = "3";
+    private static final String DEFAULT_TEL_LIVREUR = "+009 79";
+    private static final String UPDATED_TEL_LIVREUR = "+675309939";
 
     private static final String ENTITY_API_URL = "/api/livreurs";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
@@ -366,7 +366,7 @@ class LivreurResourceIT {
         Livreur partialUpdatedLivreur = new Livreur();
         partialUpdatedLivreur.setId(livreur.getId());
 
-        partialUpdatedLivreur.prenomLivreur(UPDATED_PRENOM_LIVREUR);
+        partialUpdatedLivreur.idLivreur(UPDATED_ID_LIVREUR).nomLivreur(UPDATED_NOM_LIVREUR).prenomLivreur(UPDATED_PRENOM_LIVREUR);
 
         restLivreurMockMvc
             .perform(
@@ -380,8 +380,8 @@ class LivreurResourceIT {
         List<Livreur> livreurList = livreurRepository.findAll();
         assertThat(livreurList).hasSize(databaseSizeBeforeUpdate);
         Livreur testLivreur = livreurList.get(livreurList.size() - 1);
-        assertThat(testLivreur.getIdLivreur()).isEqualTo(DEFAULT_ID_LIVREUR);
-        assertThat(testLivreur.getNomLivreur()).isEqualTo(DEFAULT_NOM_LIVREUR);
+        assertThat(testLivreur.getIdLivreur()).isEqualTo(UPDATED_ID_LIVREUR);
+        assertThat(testLivreur.getNomLivreur()).isEqualTo(UPDATED_NOM_LIVREUR);
         assertThat(testLivreur.getPrenomLivreur()).isEqualTo(UPDATED_PRENOM_LIVREUR);
         assertThat(testLivreur.getTelLivreur()).isEqualTo(DEFAULT_TEL_LIVREUR);
     }

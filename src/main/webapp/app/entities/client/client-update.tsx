@@ -145,16 +145,14 @@ export const ClientUpdate = () => {
                 }}
               />
               <ValidatedField
-                label={translate('coopCycleApp.client.telCLient')}
-                id="client-telCLient"
-                name="telCLient"
-                data-cy="telCLient"
+                label={translate('coopCycleApp.client.telClient')}
+                id="client-telClient"
+                name="telClient"
+                data-cy="telClient"
                 type="text"
                 validate={{
                   required: { value: true, message: translate('entity.validation.required') },
-                  minLength: { value: 10, message: translate('entity.validation.minlength', { min: 10 }) },
-                  maxLength: { value: 10, message: translate('entity.validation.maxlength', { max: 10 }) },
-                  pattern: { value: /[0-9]/, message: translate('entity.validation.pattern', { pattern: '[0-9]' }) },
+                  pattern: { value: /(\+\d+)?[0-9 ]+/, message: translate('entity.validation.pattern', { pattern: '(\\+\\d+)?[0-9 ]+' }) },
                 }}
               />
               <Button tag={Link} id="cancel-save" data-cy="entityCreateCancelButton" to="/client" replace color="info">

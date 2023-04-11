@@ -24,8 +24,7 @@ public class LivreurDTO implements Serializable {
     private String prenomLivreur;
 
     @NotNull
-    @Size(min = 10, max = 10)
-    @Pattern(regexp = "[0-9]")
+    @Pattern(regexp = "(\\+\\d+)?[0-9 ]+")
     private String telLivreur;
 
     private AssociationDTO association;

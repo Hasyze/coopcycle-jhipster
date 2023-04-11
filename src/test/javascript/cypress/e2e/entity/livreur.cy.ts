@@ -15,7 +15,7 @@ describe('Livreur e2e test', () => {
   const livreurPageUrlPattern = new RegExp('/livreur(\\?.*)?$');
   const username = Cypress.env('E2E_USERNAME') ?? 'user';
   const password = Cypress.env('E2E_PASSWORD') ?? 'user';
-  const livreurSample = { idLivreur: 71641, nomLivreur: 'Specialiste synthesize', prenomLivreur: 'architecture bluetooth' };
+  const livreurSample = { idLivreur: 67478, nomLivreur: 'granular', prenomLivreur: 'bluetooth ADP IB', telLivreur: '27' };
 
   let livreur;
 
@@ -164,6 +164,8 @@ describe('Livreur e2e test', () => {
       cy.get(`[data-cy="nomLivreur"]`).type('Ergonomic world-class').should('have.value', 'Ergonomic world-class');
 
       cy.get(`[data-cy="prenomLivreur"]`).type('aX').should('have.value', 'aX');
+
+      cy.get(`[data-cy="telLivreur"]`).type('6 318').should('have.value', '6 318');
 
       cy.get(entityCreateSaveButtonSelector).click();
 

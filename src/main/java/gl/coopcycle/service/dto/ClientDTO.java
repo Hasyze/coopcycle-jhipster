@@ -31,9 +31,8 @@ public class ClientDTO implements Serializable {
     private String email;
 
     @NotNull
-    @Size(min = 10, max = 10)
-    @Pattern(regexp = "[0-9]")
-    private String telCLient;
+    @Pattern(regexp = "(\\+\\d+)?[0-9 ]+")
+    private String telClient;
 
     public Long getId() {
         return id;
@@ -83,12 +82,12 @@ public class ClientDTO implements Serializable {
         this.email = email;
     }
 
-    public String getTelCLient() {
-        return telCLient;
+    public String getTelClient() {
+        return telClient;
     }
 
-    public void setTelCLient(String telCLient) {
-        this.telCLient = telCLient;
+    public void setTelClient(String telClient) {
+        this.telClient = telClient;
     }
 
     @Override
@@ -122,7 +121,7 @@ public class ClientDTO implements Serializable {
             ", nomClient='" + getNomClient() + "'" +
             ", adresseClient='" + getAdresseClient() + "'" +
             ", email='" + getEmail() + "'" +
-            ", telCLient='" + getTelCLient() + "'" +
+            ", telClient='" + getTelClient() + "'" +
             "}";
     }
 }

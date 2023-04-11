@@ -76,7 +76,7 @@ class ClientGatlingTest extends Simulation {
                 , "nomClient":"SAMPLE_TEXT"
                 , "adresseClient":"SAMPLE_TEXT"
                 , "email":"SAMPLE_TEXT"
-                , "telCLient":"SAMPLE_TEXT"
+                , "telClient":"SAMPLE_TEXT"
                 }""")).asJson
             .check(status.is(201))
             .check(headerRegex("Location", "(.*)").saveAs("new_client_url"))).exitHereIfFailed

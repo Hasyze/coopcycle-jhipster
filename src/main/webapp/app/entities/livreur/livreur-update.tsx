@@ -135,9 +135,7 @@ export const LivreurUpdate = () => {
                 type="text"
                 validate={{
                   required: { value: true, message: translate('entity.validation.required') },
-                  minLength: { value: 10, message: translate('entity.validation.minlength', { min: 10 }) },
-                  maxLength: { value: 10, message: translate('entity.validation.maxlength', { max: 10 }) },
-                  pattern: { value: /[0-9]/, message: translate('entity.validation.pattern', { pattern: '[0-9]' }) },
+                  pattern: { value: /(\+\d+)?[0-9 ]+/, message: translate('entity.validation.pattern', { pattern: '(\\+\\d+)?[0-9 ]+' }) },
                 }}
               />
               <ValidatedField

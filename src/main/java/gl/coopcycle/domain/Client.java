@@ -50,10 +50,9 @@ public class Client implements Serializable {
     private String email;
 
     @NotNull
-    @Size(min = 10, max = 10)
-    @Pattern(regexp = "[0-9]")
-    @Column(name = "tel_c_lient", length = 10, nullable = false, unique = true)
-    private String telCLient;
+    @Pattern(regexp = "(\\+\\d+)?[0-9 ]+")
+    @Column(name = "tel_client", nullable = false, unique = true)
+    private String telClient;
 
     @OneToMany(mappedBy = "client")
     @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
@@ -145,17 +144,17 @@ public class Client implements Serializable {
         this.email = email;
     }
 
-    public String getTelCLient() {
-        return this.telCLient;
+    public String getTelClient() {
+        return this.telClient;
     }
 
-    public Client telCLient(String telCLient) {
-        this.setTelCLient(telCLient);
+    public Client telClient(String telClient) {
+        this.setTelClient(telClient);
         return this;
     }
 
-    public void setTelCLient(String telCLient) {
-        this.telCLient = telCLient;
+    public void setTelClient(String telClient) {
+        this.telClient = telClient;
     }
 
     public Set<Produit> getProduits() {
@@ -249,7 +248,7 @@ public class Client implements Serializable {
             ", nomClient='" + getNomClient() + "'" +
             ", adresseClient='" + getAdresseClient() + "'" +
             ", email='" + getEmail() + "'" +
-            ", telCLient='" + getTelCLient() + "'" +
+            ", telClient='" + getTelClient() + "'" +
             "}";
     }
 }

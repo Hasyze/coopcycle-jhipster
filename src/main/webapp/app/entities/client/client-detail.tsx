@@ -63,11 +63,11 @@ export const ClientDetail = () => {
           </dt>
           <dd>{clientEntity.email}</dd>
           <dt>
-            <span id="telCLient">
-              <Translate contentKey="coopCycleApp.client.telCLient">Tel C Lient</Translate>
+            <span id="telClient">
+              <Translate contentKey="coopCycleApp.client.telClient">Tel Client</Translate>
             </span>
           </dt>
-          <dd>{clientEntity.telCLient}</dd>
+          <dd>{clientEntity.telClient}</dd>
         </dl>
         <Button tag={Link} to="/client" replace color="info" data-cy="entityDetailsBackButton">
           <FontAwesomeIcon icon="arrow-left" />{' '}

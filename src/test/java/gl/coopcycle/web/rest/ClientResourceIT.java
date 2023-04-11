@@ -46,8 +46,8 @@ class ClientResourceIT {
     private static final String DEFAULT_EMAIL = "1Gsl@HjV^svwhar";
     private static final String UPDATED_EMAIL = "uPI@zywexq";
 
-    private static final String DEFAULT_TEL_C_LIENT = "0";
-    private static final String UPDATED_TEL_C_LIENT = "5";
+    private static final String DEFAULT_TEL_CLIENT = " 428";
+    private static final String UPDATED_TEL_CLIENT = "98";
 
     private static final String ENTITY_API_URL = "/api/clients";
     private static final String ENTITY_API_URL_ID = ENTITY_API_URL + "/{id}";
@@ -82,7 +82,7 @@ class ClientResourceIT {
             .nomClient(DEFAULT_NOM_CLIENT)
             .adresseClient(DEFAULT_ADRESSE_CLIENT)
             .email(DEFAULT_EMAIL)
-            .telCLient(DEFAULT_TEL_C_LIENT);
+            .telClient(DEFAULT_TEL_CLIENT);
         return client;
     }
 
@@ -99,7 +99,7 @@ class ClientResourceIT {
             .nomClient(UPDATED_NOM_CLIENT)
             .adresseClient(UPDATED_ADRESSE_CLIENT)
             .email(UPDATED_EMAIL)
-            .telCLient(UPDATED_TEL_C_LIENT);
+            .telClient(UPDATED_TEL_CLIENT);
         return client;
     }
 
@@ -127,7 +127,7 @@ class ClientResourceIT {
         assertThat(testClient.getNomClient()).isEqualTo(DEFAULT_NOM_CLIENT);
         assertThat(testClient.getAdresseClient()).isEqualTo(DEFAULT_ADRESSE_CLIENT);
         assertThat(testClient.getEmail()).isEqualTo(DEFAULT_EMAIL);
-        assertThat(testClient.getTelCLient()).isEqualTo(DEFAULT_TEL_C_LIENT);
+        assertThat(testClient.getTelClient()).isEqualTo(DEFAULT_TEL_CLIENT);
     }
 
     @Test
@@ -241,10 +241,10 @@ class ClientResourceIT {
 
     @Test
     @Transactional
-    void checkTelCLientIsRequired() throws Exception {
+    void checkTelClientIsRequired() throws Exception {
         int databaseSizeBeforeTest = clientRepository.findAll().size();
         // set the field null
-        client.setTelCLient(null);
+        client.setTelClient(null);
 
         // Create the Client, which fails.
         ClientDTO clientDTO = clientMapper.toDto(client);
@@ -274,7 +274,7 @@ class ClientResourceIT {
             .andExpect(jsonPath("$.[*].nomClient").value(hasItem(DEFAULT_NOM_CLIENT)))
             .andExpect(jsonPath("$.[*].adresseClient").value(hasItem(DEFAULT_ADRESSE_CLIENT)))
             .andExpect(jsonPath("$.[*].email").value(hasItem(DEFAULT_EMAIL)))
-            .andExpect(jsonPath("$.[*].telCLient").value(hasItem(DEFAULT_TEL_C_LIENT)));
+            .andExpect(jsonPath("$.[*].telClient").value(hasItem(DEFAULT_TEL_CLIENT)));
     }
 
     @Test
@@ -294,7 +294,7 @@ class ClientResourceIT {
             .andExpect(jsonPath("$.nomClient").value(DEFAULT_NOM_CLIENT))
             .andExpect(jsonPath("$.adresseClient").value(DEFAULT_ADRESSE_CLIENT))
             .andExpect(jsonPath("$.email").value(DEFAULT_EMAIL))
-            .andExpect(jsonPath("$.telCLient").value(DEFAULT_TEL_C_LIENT));
+            .andExpect(jsonPath("$.telClient").value(DEFAULT_TEL_CLIENT));
     }
 
     @Test
@@ -322,7 +322,7 @@ class ClientResourceIT {
             .nomClient(UPDATED_NOM_CLIENT)
             .adresseClient(UPDATED_ADRESSE_CLIENT)
             .email(UPDATED_EMAIL)
-            .telCLient(UPDATED_TEL_C_LIENT);
+            .telClient(UPDATED_TEL_CLIENT);
         ClientDTO clientDTO = clientMapper.toDto(updatedClient);
 
         restClientMockMvc
@@ -342,7 +342,7 @@ class ClientResourceIT {
         assertThat(testClient.getNomClient()).isEqualTo(UPDATED_NOM_CLIENT);
         assertThat(testClient.getAdresseClient()).isEqualTo(UPDATED_ADRESSE_CLIENT);
         assertThat(testClient.getEmail()).isEqualTo(UPDATED_EMAIL);
-        assertThat(testClient.getTelCLient()).isEqualTo(UPDATED_TEL_C_LIENT);
+        assertThat(testClient.getTelClient()).isEqualTo(UPDATED_TEL_CLIENT);
     }
 
     @Test
@@ -422,7 +422,12 @@ class ClientResourceIT {
         Client partialUpdatedClient = new Client();
         partialUpdatedClient.setId(client.getId());
 
-        partialUpdatedClient.idClient(UPDATED_ID_CLIENT).adresseClient(UPDATED_ADRESSE_CLIENT);
+        partialUpdatedClient
+            .idClient(UPDATED_ID_CLIENT)
+            .prenomClient(UPDATED_PRENOM_CLIENT)
+            .adresseClient(UPDATED_ADRESSE_CLIENT)
+            .email(UPDATED_EMAIL)
+            .telClient(UPDATED_TEL_CLIENT);
 
         restClientMockMvc
             .perform(
@@ -437,11 +442,11 @@ class ClientResourceIT {
         assertThat(clientList).hasSize(databaseSizeBeforeUpdate);
         Client testClient = clientList.get(clientList.size() - 1);
         assertThat(testClient.getIdClient()).isEqualTo(UPDATED_ID_CLIENT);
-        assertThat(testClient.getPrenomClient()).isEqualTo(DEFAULT_PRENOM_CLIENT);
+        assertThat(testClient.getPrenomClient()).isEqualTo(UPDATED_PRENOM_CLIENT);
         assertThat(testClient.getNomClient()).isEqualTo(DEFAULT_NOM_CLIENT);
         assertThat(testClient.getAdresseClient()).isEqualTo(UPDATED_ADRESSE_CLIENT);
-        assertThat(testClient.getEmail()).isEqualTo(DEFAULT_EMAIL);
-        assertThat(testClient.getTelCLient()).isEqualTo(DEFAULT_TEL_C_LIENT);
+        assertThat(testClient.getEmail()).isEqualTo(UPDATED_EMAIL);
+        assertThat(testClient.getTelClient()).isEqualTo(UPDATED_TEL_CLIENT);
     }
 
     @Test
@@ -462,7 +467,7 @@ class ClientResourceIT {
             .nomClient(UPDATED_NOM_CLIENT)
             .adresseClient(UPDATED_ADRESSE_CLIENT)
             .email(UPDATED_EMAIL)
-            .telCLient(UPDATED_TEL_C_LIENT);
+            .telClient(UPDATED_TEL_CLIENT);
 
         restClientMockMvc
             .perform(
@@ -481,7 +486,7 @@ class ClientResourceIT {
         assertThat(testClient.getNomClient()).isEqualTo(UPDATED_NOM_CLIENT);
         assertThat(testClient.getAdresseClient()).isEqualTo(UPDATED_ADRESSE_CLIENT);
         assertThat(testClient.getEmail()).isEqualTo(UPDATED_EMAIL);
-        assertThat(testClient.getTelCLient()).isEqualTo(UPDATED_TEL_C_LIENT);
+        assertThat(testClient.getTelClient()).isEqualTo(UPDATED_TEL_CLIENT);
     }
 
     @Test

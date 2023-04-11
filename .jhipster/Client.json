@@ -1,6 +1,6 @@
 {
   "applications": "*",
-  "changelogDate": "20230409230142",
+  "changelogDate": "20230411095015",
   "dto": "mapstruct",
   "embedded": false,
   "entityTableName": "client",
@@ -34,12 +34,10 @@
       "fieldValidateRulesPattern": "[a-zA-Z0-9.]+@[a-zA-Z0-9.]+.[a-z]+"
     },
     {
-      "fieldName": "telCLient",
+      "fieldName": "telClient",
       "fieldType": "String",
-      "fieldValidateRules": ["required", "unique", "maxlength", "minlength", "pattern"],
-      "fieldValidateRulesMaxlength": "10",
-      "fieldValidateRulesMinlength": "10",
-      "fieldValidateRulesPattern": "[0-9]"
+      "fieldValidateRules": ["required", "unique", "pattern"],
+      "fieldValidateRulesPattern": "(\\+\\d+)?[0-9 ]+"
     }
   ],
   "fluentMethods": true,

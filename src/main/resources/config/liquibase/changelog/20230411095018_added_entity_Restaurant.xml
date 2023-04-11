@@ -7,34 +7,24 @@
                         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
     <!--
-        Added the entity Livraison.
+        Added the entity Restaurant.
     -->
-    <changeSet id="20230409230144-1" author="jhipster">
-        <createTable tableName="livraison">
+    <changeSet id="20230411095018-1" author="jhipster">
+        <createTable tableName="restaurant">
             <column name="id" type="bigint">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="id_livraison" type="integer">
-                <constraints nullable="false" unique="true" uniqueConstraintName="ux_livraison__id_livraison" />
+            <column name="id_rest" type="integer">
+                <constraints nullable="false" unique="true" uniqueConstraintName="ux_restaurant__id_rest" />
             </column>
-            <column name="prix_livraison" type="${floatType}">
+            <column name="nom_rest" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
-            <column name="date" type="${datetimeType}">
+            <column name="adresse_rest" type="varchar(50)">
                 <constraints nullable="false" />
-            </column>
-            <column name="adresse_livraison" type="varchar(255)">
-                <constraints nullable="false" />
-            </column>
-            <column name="client_id" type="bigint">
-                <constraints nullable="true" />
-            </column>
-            <column name="livreur_id" type="bigint">
-                <constraints nullable="true" />
             </column>
             <!-- jhipster-needle-liquibase-add-column - JHipster will add columns here -->
         </createTable>
-        <dropDefaultValue tableName="livraison" columnName="date" columnDataType="${datetimeType}"/>
     </changeSet>
 
     <!-- jhipster-needle-liquibase-add-changeset - JHipster will add changesets here -->
@@ -47,17 +37,16 @@
           This can be customized by adding or removing 'faker' in the 'spring.liquibase.contexts'
           Spring Boot configuration key.
     -->
-    <changeSet id="20230409230144-1-data" author="jhipster" context="faker">
+    <changeSet id="20230411095018-1-data" author="jhipster" context="faker">
         <loadData
-                  file="config/liquibase/fake-data/livraison.csv"
+                  file="config/liquibase/fake-data/restaurant.csv"
                   separator=";"
-                  tableName="livraison"
+                  tableName="restaurant"
                   usePreparedStatements="true">
             <column name="id" type="numeric"/>
-            <column name="id_livraison" type="numeric"/>
-            <column name="prix_livraison" type="numeric"/>
-            <column name="date" type="date"/>
-            <column name="adresse_livraison" type="string"/>
+            <column name="id_rest" type="numeric"/>
+            <column name="nom_rest" type="string"/>
+            <column name="adresse_rest" type="string"/>
             <!-- jhipster-needle-liquibase-add-loadcolumn - JHipster (and/or extensions) can add load columns here -->
         </loadData>
     </changeSet>
